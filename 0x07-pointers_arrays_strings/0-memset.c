@@ -2,17 +2,18 @@
 
 /**
  * _memset -> this memory set function
- * @s: memory area to fill
- * @b: constant byte to fill
- * @n: byte of memory area to fill
- * Return: the memory area filled
+ * @s: memory area to be filled
+ * @b: char to copy
+ * @n: number of times to copy b
+ * Return: pointer to the memory area s
  */
 char *_memset(char *s, char b, unsigned int n);
 {
-	unsigned int a;
+	unsigned int i;
 
-	for  (a = 0; a < n; a++)
-		s[a] = b;
-
+	for (i = 0; i < n; i++)
+	{
+		s[i] = b;
+	}
 	return (s);
 }
