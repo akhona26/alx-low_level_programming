@@ -2,10 +2,10 @@
 
 /**
  * _memset -> this memory set function
- * @s: string
- * @b: a character
- * @n: an integer
- * Return: a string
+ * @s: memory area to fill
+ * @b: constant byte to fill
+ * @n: byte of memory area to fill
+ * Return: the memory area filled
  */
 char *_memset(char *s, char b, unsigned int n);
 {
